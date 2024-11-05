@@ -1,0 +1,45 @@
+# Copyright (c) 2024 NVIDIA Corporation.  All rights reserved.
+# see https://github.com/openhackathons-org/End-to-End-LLM/blob/main/Dockerfile_trtllm
+
+# Select Base Image 
+# see https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver
+FROM nvcr.io/nvidia/tritonserver:24.10-trtllm-python-py3
+
+
+# TensorRT-LLM uses git-lfs, which needs to be installed in advance.
+RUN apt-get update && apt-get -y install git git-lfs cmake
+RUN pip3 install jupyterlab datasets tabulate tritonclient[all]
+
+
+# Make app directory
+RUN mkdir -p /workspace/app
+WORKDIR /workspace
+
+#Clone tensorrtllm_backend repo
+RUN git clone https://github.com/triton-inference-server/tensorrtllm_backend.git
+RUN cd tensorrtllm_backend && rm -rf tensorrt_llm/ && ls
+
+# Install TRT-LLM 
+WORKDIR /workspace/tensorrtllm_backend
+RUN git clone https://github.com/NVIDIA/TensorRT-LLM.git
+
+# Navigate into TensorRT-LLM and checkout at v0.8.0 or latest release
+WORKDIR /workspace/tensorrtllm_backend/TensorRT-LLM
+RUN git checkout v0.8.0
+RUN git submodule update --init --recursive
+RUN git lfs install
+RUN git lfs pull
+
+
+# Install TRT-LLM To build the TensorRT-LLM code.
+RUN python3 ./scripts/build_wheel.py --trt_root /usr/local/tensorrt 
+
+# Install TRT-LLM using pip Deploy TensorRT-LLM.
+RUN pip install ./build/tensorrt_llm*.whl
+
+# rename folder name
+RUN cd .. && mv TensorRT-LLM tensorrt_llm
+
+
+# TensorRT-LLM Server Port 
+ENV HTTP_PORT 8000

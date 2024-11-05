@@ -1,0 +1,11 @@
+# see https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nemo
+
+FROM nvcr.io/nvidia/nemo:24.07
+
+ENV XDG_RUNTIME_DIR=""
+
+RUN apt-get update && apt-get -y install git git-lfs cmake
+RUN pip3 install ujson
+RUN pip3 install --upgrade --no-cache-dir gdown
+RUN pip3 instal accelerate peft bitsandbytes transformers trl
+RUN pip3 install spacy-langdetect
