@@ -75,7 +75,7 @@ Rather than provide a series of notebooks to cover concepts, the source module i
 
 # Resources
 
-## Framework Resources
+## Framework References
 
 - [NeMo documentation](https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html)
 - [NeMo tutorials](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html)
