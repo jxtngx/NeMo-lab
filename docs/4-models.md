@@ -17,17 +17,12 @@
         <td>Text Generation</td>
     </tr>
     <tr>
-        <td><a href="https://build.nvidia.com/nvidia/nemotron-mini-4b-instruct">nemotron-mini-4b-instruct</a></td>
-        <td>NVIDIA</td>
-        <td>Text Generation</td>
-    </tr>
-    <tr>
-        <td><a href="https://build.nvidia.com/nvidia/nemotron-mini-4b-instruct">nemotron-mini-4b-instruct</a></td>
+        <td><a href="https://build.nvidia.com/nvidia/llama-3_2-nv-embedqa-1b-v1">llama-3.2-nv-embedqa-1b-v1</a></td>
         <td>NVIDIA</td>
         <td>Embeddings</td>
     </tr>
     <tr>
-        <td><a href="https://build.nvidia.com/nvidia/nemotron-mini-4b-instruct">nemotron-mini-4b-instruct</a></td>
+        <td><a href="https://build.nvidia.com/nvidia/llama-3_2-nv-rerankqa-1b-v1">llama-3.2-nv-rerankqa-1b-v1</a></td>
         <td>NVIDIA</td>
         <td>Reranking</td>
     </tr>
