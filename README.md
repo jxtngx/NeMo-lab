@@ -37,7 +37,7 @@ We will use NeMo to tune a Llama variant on the instruction tuning dataset.
 We will use [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server) to deploy the tuned model.
 
 > [!NOTE]
-> Refer to the [model deployment tutorial](./docs/2-model-deployment.md) for a detailed walk-through.
+> Refer to the [model deployment tutorial](./docs/3-model-deployment.md) for a detailed walk-through.
 
 ## Additional Concepts
 
