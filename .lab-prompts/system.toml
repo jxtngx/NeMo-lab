@@ -26,3 +26,18 @@ body
 of
 text
 """
+
+[tools]
+
+[tools.one]
+tool = """
+tool one
+"""
+
+[tools.two]
+tool = """
+tool two
+"""
+
+[answer]
+format = {"tool_name": "ToolName"}
