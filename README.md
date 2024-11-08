@@ -18,7 +18,7 @@ flowchart LR
 id1(data processing) --> id2(model development) --> id3(model deployment)
 ```
 
-Where the endstate of the pipeline relies on [TensorRT-LLM]() and [Triton Inference Server]()
+Where the endstate of the pipeline relies on [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server)
 
 ## System Requirements
 
