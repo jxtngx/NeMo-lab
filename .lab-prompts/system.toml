@@ -1,0 +1,28 @@
+[base]
+description = """
+a
+multiline
+persona
+description
+"""
+
+[rules]
+
+[rules.one]
+rule = """
+rule one
+"""
+
+[rules.two]
+rule = """
+rule two
+"""
+
+[body]
+text = """
+a
+multiline
+body
+of
+text
+"""
