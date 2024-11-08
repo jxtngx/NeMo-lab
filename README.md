@@ -56,7 +56,7 @@ The repo architecture aids in use of scripts and configs that leverage the sourc
 
 Additionally, the design should aid notebook-bound learners to segue into becoming more comfortable with skills associated with software engineering principles – notably, module cohesion, code quality, python packaging, and containerization and virtualization.
 
-Rather than provide a series of notebooks to cover concepts, the source module is paired with several tutorials found in `docs`. This will allow the engineer to better familiarize with the source code of `nemo_lab` and associated scripts, and to explain rationale behind such topics as using yaml for configs and toml for prompt files.
+Rather than provide a series of notebooks to cover concepts, the source module is paired with several tutorials found in `docs`. This will allow the engineer to better familiarize with the source code of `nemo_lab` and associated scripts, and to explain rationale behind such topics as using yaml for configs and toml for prompt files, and complementary tools for experimentation management and trace logging.
 
 # System Requirements
 
