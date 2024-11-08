@@ -1,3 +1,4 @@
+# add relevant settings as necessary
 data:
   tuning: "timdettmers/openassistant-guanaco"
 
