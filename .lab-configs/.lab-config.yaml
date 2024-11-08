@@ -1,0 +1,16 @@
+data:
+  tuning: "timdettmers/openassistant-guanaco"
+
+# see https://build.nvidia.com/nvidia
+development:
+  embed: "nv-embed-v2"
+  reranker: "rerank-qa-mistral-4b"
+  generator: "llama-3.2-3B-Instruct"
+  tokenizer: null
+
+deploy:
+  port: 8000
+
+paths:
+  data: ${oc.env:PWD}/.data
+  models: ${oc.env:PWD}/.models
