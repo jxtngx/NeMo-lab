@@ -21,6 +21,16 @@
         <td>NVIDIA</td>
         <td>Text Generation</td>
     </tr>
+    <tr>
+        <td><a href="https://build.nvidia.com/nvidia/nemotron-mini-4b-instruct">nemotron-mini-4b-instruct</a></td>
+        <td>NVIDIA</td>
+        <td>Embeddings</td>
+    </tr>
+    <tr>
+        <td><a href="https://build.nvidia.com/nvidia/nemotron-mini-4b-instruct">nemotron-mini-4b-instruct</a></td>
+        <td>NVIDIA</td>
+        <td>Reranking</td>
+    </tr>
 </table>
 
 Additional [models by NVIDIA](https://build.nvidia.com/nvidia).
