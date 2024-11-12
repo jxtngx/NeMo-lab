@@ -48,16 +48,6 @@ We will use [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton I
 - System prompt design
 - Experiment management with Weights & Biases
 
-# Repo Architecture
-
-The architecture is meant to provide an entrypoint to a relatively wide breadth of concepts, though at a high level.
-
-The repo architecture aids in use of scripts and configs that leverage the source package `src/nemo_lab`. Similar design patterns can be found in NeMo, and other repos that have to do with language model experimentation and inferencing. Adhering to this unwritten convention should aid in the engineer's understanding of any project that follows such a pattern.
-
-Additionally, the design should aid notebook-bound learners to segue into becoming more comfortable with skills associated with software engineering principles – notably, module cohesion, code quality, python packaging, and containerization and virtualization.
-
-Rather than provide a series of notebooks to cover concepts, the source module is paired with several tutorials found in `docs`. This will allow the engineer to better familiarize with the source code of `nemo_lab` and associated scripts, and to explain rationale behind such topics as using yaml for configs and toml for prompt files, and complementary tools for experimentation management and trace logging.
-
 # System Requirements
 
 - A Linux distro
