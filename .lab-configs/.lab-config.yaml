@@ -13,5 +13,5 @@ deploy:
   port: 8000
 
 paths:
-  data: ${oc.env:PWD}/.data
-  models: ${oc.env:PWD}/.models
+  data: ${oc.env:PWD}/.lab-datasets
+  models: ${oc.env:PWD}/.lab-models
