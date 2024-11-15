@@ -1,6 +1,6 @@
 # NeMo Lab
 
-NeMo Lab is an example template for Generative AI with language models using [NVIDIA NeMo](https://www.nvidia.com/en-us/ai-data-science/products/nemo/).
+NeMo Lab is an example template for Generative AI with language models using [NVIDIA NeMo 2.0](https://www.nvidia.com/en-us/ai-data-science/products/nemo/).
 
 [NVIDA NeMo](https://www.nvidia.com/en-us/ai-data-science/products/nemo/) is an accelerated end-to-end platform that is flexible and production ready. NeMo is comprised of several component frameworks which enable teams to build, customize, and deploy Generative AI solutions for:
 
@@ -11,33 +11,36 @@ NeMo Lab is an example template for Generative AI with language models using [NV
 
 # Concepts
 
-NeMo Lab is inspired by [NeMo tutorials](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html), the [TensorRT-LLM quick start](https://nvidia.github.io/TensorRT-LLM/quick-start-guide.html), and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM), of which the later follows the below shown pipeline for instruction tuning and deploying a Llama variant:
+NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html), the [`TensorRT-LLM quick start`](https://nvidia.github.io/TensorRT-LLM/quick-start-guide.html), and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM); of which the later follows the below shown pipeline to guide hackathon participants through instruction tuning and deploying a Llama variant:
 
 ```mermaid
 flowchart LR
 id1(data processing) --> id2(model development) --> id3(model deployment)
 ```
 
+> [!NOTE]
+> When appropriate, we will use scripts and recipes provided in [NVIDIA/NeMo/scripts](https://github.com/NVIDIA/NeMo/tree/main/scripts)
+
 ## Data Processing
 
-We will use the [openassistant-guanaco](https://huggingface.co/datasets/timdettmers/openassistant-guanaco) dataset for instruction tuning. The dataset will be processed according to the procedure shown in [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM).
+We will use a dataset presecribed in the NeMo tutorials for instruction tuning. The dataset will be processed according to the procedure shown in any complementary script or tutorial that accompanies that dataset.
 
 > [!NOTE]
-> Refer to the [data processing tutorial](./docs/1-data-processing.md) for a detailed walk-through.
+> Refer to the [data processing tutorial](./docs/1-data-processing.md) for a detailed walk-through
 
 ## Model Development
 
 We will use NeMo to tune a Llama variant on the instruction tuning dataset.
 
 > [!NOTE]
-> Refer to the [model development tutorial](./docs/2-model-development.md) for a detailed walk-through.
+> Refer to the [model development tutorial](./docs/2-model-development.md) for a detailed walk-through
 
 ## Model Deployment
 
-We will use [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server) to deploy the tuned model.
+We will use NeMo interfaces to export models for inference with [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server).
 
 > [!NOTE]
-> Refer to the [model deployment tutorial](./docs/3-model-deployment.md) for a detailed walk-through.
+> Refer to the [model deployment tutorial](./docs/3-model-deployment.md) for a detailed walk-through
 
 ## Additional Concepts
 
@@ -46,7 +49,7 @@ We will use [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton I
 - LLM Traces with [LangSmith](https://www.langchain.com/langsmith)
 - Containerization with Docker
 - System prompt design
-- Experiment management with Weights & Biases
+- Experiment management with [Weights & Biases](https://wandb.ai/site)
 
 # System Requirements
 
@@ -55,12 +58,12 @@ We will use [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton I
 
 # User Account Requirements
 
-- [NVIDIA Developer Progam](https://developer.nvidia.com/developer-program)
+- [NVIDIA Developer Program](https://developer.nvidia.com/developer-program)
 - [NVIDIA NGC](https://catalog.ngc.nvidia.com/) for NeMo and TensorRT-LLM containers
 - [build.nvidia.com](https://build.nvidia.com/) for API calls to NVIDIA hosted endpoints
 - [Hugging Face Hub](https://huggingface.co/) for model weights and datasets
 - [LangChain](https://www.langchain.com/) for LangSmith
-- [Weights and Biases](https://wandb.ai/site) for experiment management during finetuning
+- [Weights & Biases](https://wandb.ai/site) for experiment management during finetuning
 
 # Resources
 
