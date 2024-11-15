@@ -51,6 +51,15 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 - System prompt design
 - Experiment management with [Weights & Biases](https://wandb.ai/site)
 
+# Models
+
+We will use NVIDIA and Meta models including, but not limited to:
+
+- NVIDIA Cosmos tokenizers
+- NVIDIA Llama variants, Megatron distillations, and Minitron language models
+- NVIDIA embedding, reranking, and retrieval models
+- NeMo compatible Meta Llama variants
+
 # System Requirements
 
 - a CUDA compatible OS and device (GPU) with at least 16GB of VRAM (e.g. a T4 (Colab), or RTX 3090).
