@@ -38,6 +38,7 @@ classifiers = [
 ]
 dependencies = [
     "nemo-toolkit[all]",
+    "megatron_core",
     "huggingface_hub",
     "datasets",
     "click",
