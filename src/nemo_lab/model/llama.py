@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # code derived from https://github.com/NVIDIA/NeMo/blob/main/nemo/collections/llm/gpt/model/llama.py
+# updated for Llama 3.2
 
 from pathlib import Path
 
