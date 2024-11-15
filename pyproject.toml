@@ -37,6 +37,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12"
 ]
 dependencies = [
+    "nemo-toolkit[all]",
     "huggingface_hub",
     "datasets",
     "click",
