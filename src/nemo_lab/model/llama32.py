@@ -57,7 +57,6 @@ class Llama32Config1B(Llama3Config):
 
 @dataclass
 class Llama32Config3B(Llama3Config):
-    architectures = ["LlamaForCausalLM"]
     attention_bias = False
     attention_dropout = 0.0
     bos_token_id = 128000
