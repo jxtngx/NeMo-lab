@@ -1,8 +1,12 @@
 import os
+from pathlib import Path
 
 from datasets import load_dataset
 
-cache_dir = os.path.join(".lab-datasets/cache")
+# simple resolve to set cache dir
+filepath = Path(__file__)
+rootpath = filepath.parents[2]
+cache_dir = os.path.join(rootpath, ".lab-datasets", "cache")
 
 # load_dataset will check cache for existing download
 # uncomment each dataset to download
