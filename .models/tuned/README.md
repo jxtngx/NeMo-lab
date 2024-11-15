@@ -1,1 +1,1 @@
-training checkpoints will get pushed to this directory
+tuned checkpoints will get pushed to this directory
