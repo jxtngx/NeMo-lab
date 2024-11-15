@@ -12,13 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
 from dataclasses import dataclass
 
 from nemo.collections import llm
 from nemo.collections.llm.gpt.model.llama import Llama3Config
-
-ckpts = os.path.join(".models/pretained")
 
 
 @dataclass
