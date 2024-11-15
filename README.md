@@ -50,8 +50,7 @@ We will use [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton I
 
 # System Requirements
 
-- A Linux distro
-- CUDA compatible device (GPU) with at least 16GB of VRAM (e.g. a T4 (Colab), or RTX 3090).
+- a CUDA compatible OS and device (GPU) with at least 16GB of VRAM (e.g. a T4 (Colab), or RTX 3090).
 - [Docker](https://docs.docker.com/)
 
 # User Account Requirements
