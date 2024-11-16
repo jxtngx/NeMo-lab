@@ -103,4 +103,5 @@ We will use NVIDIA and Meta models including, but not limited to:
 ## Additional Materials
 
 - [Build a Large Language Model, Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch)
-- [Hands-On Large Language Models Alammar et al](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)
+- [Hands-On Large Language Models, Alammar et al](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)
+- [Getting Beyond the Hype: A Guide to AI’s Potential, Stanford](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential)
