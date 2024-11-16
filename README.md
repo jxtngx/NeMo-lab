@@ -26,21 +26,21 @@ id1(data processing) --> id2(model development) --> id3(model deployment)
 We will use a dataset presecribed in the NeMo tutorials for instruction tuning. The dataset will be processed according to the procedure shown in any complementary script or tutorial that accompanies that dataset.
 
 > [!NOTE]
-> Refer to the [data processing tutorial](./docs/1-data-processing.md) for a detailed walk-through
+> Refer to the [data processing tutorial](./docs/tutorials/1-data-processing.md) for a detailed walk-through
 
 ## Model Development
 
 We will use NeMo to tune a Llama variant on the instruction tuning dataset.
 
 > [!NOTE]
-> Refer to the [model development tutorial](./docs/2-model-development.md) for a detailed walk-through
+> Refer to the [model development tutorial](./docs/tutorials/2-model-development.md) for a detailed walk-through
 
 ## Model Deployment
 
 We will use NeMo interfaces to export models for inference with [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server).
 
 > [!NOTE]
-> Refer to the [model deployment tutorial](./docs/3-model-deployment.md) for a detailed walk-through
+> Refer to the [model deployment tutorial](./docs/tutorials/3-model-deployment.md) for a detailed walk-through
 
 ## Additional Concepts
 
@@ -55,10 +55,10 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 
 We will use NVIDIA and Meta models including, but not limited to:
 
-- NVIDIA Cosmos tokenizers
 - NVIDIA Llama variants, Megatron distillations, and Minitron language models
-- NVIDIA embedding, reranking, and retrieval models
 - NeMo compatible Meta Llama variants
+- NVIDIA embedding, reranking, and retrieval models
+- NVIDIA Cosmos tokenizers
 
 # System Requirements
 
@@ -99,3 +99,8 @@ We will use NVIDIA and Meta models including, but not limited to:
 - [Beyond RAG Basics: Building Agents, Co-Pilots, Assistants, and More!](https://www.nvidia.com/en-us/on-demand/session/gtc24-s62533/?ncid=em-nurt-357883&mkt_tok=MTU2LU9GTi03NDIAAAGWcw69qcOLICDwzc5k1q4fHjE99s7tpt355Ckin2E7NvN0R9_19wuU_65jAp4CubV85JY-DRDMEFXuFo0ek6nPExWYghHfPtB2m9B2IrFeFeyeE4BuYNI)
 - [Generative AI Essentials](https://www.nvidia.com/en-us/ai-data-science/generative-ai/video-sessions-accelerated-development/?ncid=em-nurt-269499&mkt_tok=MTU2LU9GTi03NDIAAAGWcw69qam-BVUHdn8F4tVRrNIwk13Zq9Bjwt4BmoQizeMT-UpE0bX7CF9oYjPpT_JyzEu7k-EhtkJrY4NGI6szhS6F58MX58c2tXZulioli0OCNC5dO-o)
 - [GTC 2024 - Latest in Generative AI](https://www.nvidia.com/en-us/on-demand/playlist/playList-4f66703b-30b6-4b46-b906-8d18623360ba/?ncid=em-nurt-508206&mkt_tok=MTU2LU9GTi03NDIAAAGWcw69qXvl-vMKaHc2mv2rUhRH2GMhdXxtd7ACJV5dQDxhWqmDj7okkXie55OK8wFOgRXUq2OQCWvBe3TJvNxQdnRFxYdY0PygnXhqVHu_vFA6vDWiDno)
+
+## Additional Materials
+
+- [Build a Large Language Model, Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch)
+- [Hands-On Large Language Models Alammar et al](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)
