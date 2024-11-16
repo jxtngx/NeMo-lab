@@ -55,7 +55,7 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 
 We will use NVIDIA and Meta models including, but not limited to:
 
-- NVIDIA Llama variants, Megatron distillations, and Minitron language models
+- NVIDIA Llama variants, Mistral variants, Megatron distillations, and Minitron
 - NeMo compatible Meta Llama variants
 - NVIDIA embedding, reranking, and retrieval models
 - NVIDIA Cosmos tokenizers
