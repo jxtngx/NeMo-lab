@@ -74,6 +74,19 @@ We will use NVIDIA and Meta models including, but not limited to:
 - [LangChain](https://www.langchain.com/) for LangSmith
 - [Weights & Biases](https://wandb.ai/site) for experiment management during finetuning
 
+## Setup
+
+To prepare a development environment, please run the following in terminal:
+
+```sh
+bash install_requirments.sh
+```
+
+Doing so will install `nemo_lab` along with the `nemo_run` and `megatron_core 0.10.0rc0`. 
+
+> [!NOTE]
+> `megatron_core 0.10.0rc0` is required for compatibility with NeMo 2.0
+
 # Resources
 
 ## Framework References
