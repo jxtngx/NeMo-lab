@@ -82,10 +82,15 @@ To prepare a development environment, please run the following in terminal:
 bash install_requirments.sh
 ```
 
-Doing so will install `nemo_lab` along with the `nemo_run` and `megatron_core 0.10.0rc0`. 
+Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.0rc0`, and the `nvidia/apex` PyTorch extension. 
 
 > [!NOTE]
 > `megatron_core 0.10.0rc0` is required for compatibility with NeMo 2.0
+
+> [!NOTE]
+> NVIDIA Apex is required for RoPE Scaling in NeMo 2.0.
+> NVIDIA Apex is built with CUDA and C++ extensions for performance and full functionality.
+> please be aware that the build process may take several minutes
 
 # Resources
 
