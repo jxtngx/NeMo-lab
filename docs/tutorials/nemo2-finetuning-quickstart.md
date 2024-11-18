@@ -28,8 +28,7 @@ python scripts/quickstart/nemo2_quickstart.py
 ```
 
 > [!WARNING]
-> installing the requirements takes several minutes
->
+> installing the requirements takes several minutes \n
 > DO NOT INTERRUPT THE PROCESS
 
 > [!IMPORTANT]
@@ -60,8 +59,7 @@ pip install -v \
 5. `git+https://github.com/NVIDIA/apex.git` is NVIDIA Apex and is needed for RoPE scaling and other methods
 
 > [!WARNING]
-> the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations
->
+> the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations \n
 > DO NOT INTERRUPT THE PROCESS
 
 > [!TIP]
