@@ -9,11 +9,30 @@ The steps shown below have been collected from the NeMo 2.0 documentation and tu
 
 We will create a Llama 3 variant finetuned on SQuAD (Stanford Q&A) via a finetuning recipe found in NeMo; and we will manage the experiment with NeMo Run.
 
+# Intro
+
+While there are only a few lines of code required to run the quickstart, we should acknowledge the fact that this means the NeMo framework engineers have done a lot of hard work for us, and have successfully abstracted many processes behind these high level interfaces. Namely data processing pipelines, model downloading and instantiation as modules, trainer instantiation, and recipe configs. 
+
+As such, we should be prepared to troubleshoot errors that may lead us into the source code of NeMo, Megatron Core, PyTorch, PyTorch Lightning, and NVIDIA Apex. Additionally, this will mean sharing issues with the maintainers on GitHub, and helping to guide other community members by sharing common resolutions in community forums. 
+
+# An Even Faster Quickstart
+
+If you wish to run the quickstart, and then read the accompanying commentary that is provided below, we can run the following in terminal:
+
+```bash
+bash install_requirements.sh
+python scripts/quickstart/nemo2_quickstart.py
+```
+
+> [!WARNING]
+> installing the requirements takes several minutes
+> DO NOT INTERRUPT THE PROCESS
+
 # The Steps
 
 ## Install requirements
 
-The following installation commands are provided in [`install_requirements.sh`](../../install_requirements.sh). Each is shown here so that we might state why each is included as a requirement.
+The following installation commands are provided in [`install_requirements.sh`](../../install_requirements.sh), and can be ran from the terminal with `bash install_requirements.sh`. Each command is shown here so that we might state why each is included as a requirement.
 
 ```bash
 apt-get update && apt-get install -y libsndfile1 ffmpeg
@@ -37,8 +56,8 @@ pip install -v \
 > the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations
 > DO NOT INTERRUPT THE PROCESS
 
-> [!NOTE]
-> 
+> [!TIP]
+> run `bash install_requirements.sh` to run the above installation steps
 
 ## Imports
 
