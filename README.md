@@ -21,7 +21,7 @@ id1(data processing) --> id2(model development) --> id3(model deployment)
 > [!NOTE]
 > When appropriate, we will use scripts and recipes provided in [NVIDIA/NeMo/scripts](https://github.com/NVIDIA/NeMo/tree/main/scripts)
 
-> [!INFORMATION]
+> [!TIP]
 > Get started with the quick start [tutorial](docs/tutorials/nemo2-finetuning-quickstart.md) and [script](scripts/quickstart/nemo2_quickstart.py)
 
 ## Data Processing
@@ -95,7 +95,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 > NVIDIA Apex is built with CUDA and C++ extensions for performance and full functionality.
 > please be aware that the build process may take several minutes
 
-> [!INFORMATION]
+> [!TIP]
 > Get started with the quick start [tutorial](docs/tutorials/nemo2-finetuning-quickstart.md) and [script](scripts/quickstart/nemo2_quickstart.py)
 
 # Resources
