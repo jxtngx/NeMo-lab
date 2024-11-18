@@ -5,6 +5,9 @@ The steps shown below have been collected from the NeMo 2.0 documentation and tu
 > [!IMPORTANT]
 > A CUDA compatible operating system and device is required for this quickstart
 
+> [!IMPORTANT]
+> attempting to run the quickstart in a notebook may affect the Lightning Trainer and NeMo training strategy
+
 # The Goal
 
 We will create a Llama 3 variant finetuned on SQuAD (Stanford Q&A) via a finetuning recipe found in NeMo; and we will manage the experiment with NeMo Run.
@@ -27,6 +30,9 @@ python scripts/quickstart/nemo2_quickstart.py
 > [!WARNING]
 > installing the requirements takes several minutes
 > DO NOT INTERRUPT THE PROCESS
+
+> [!IMPORTANT]
+> attempting to run the quickstart in a notebook may affect the Lightning Trainer and NeMo training strategy
 
 # The Steps
 
