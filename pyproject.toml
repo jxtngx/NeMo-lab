@@ -37,9 +37,9 @@ classifiers = [
     "Programming Language :: Python :: 3.12"
 ]
 dependencies = [
-    "nemo-toolkit[all]",
     "transformer_engine[pytorch]",
     "huggingface_hub",
+    "transformers",
     "datasets",
     "click",
     "python-dotenv",
