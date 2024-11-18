@@ -29,6 +29,7 @@ python scripts/quickstart/nemo2_quickstart.py
 
 > [!WARNING]
 > installing the requirements takes several minutes
+>
 > DO NOT INTERRUPT THE PROCESS
 
 > [!IMPORTANT]
@@ -60,6 +61,7 @@ pip install -v \
 
 > [!WARNING]
 > the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations
+>
 > DO NOT INTERRUPT THE PROCESS
 
 > [!TIP]
