@@ -14,7 +14,6 @@ try:
     llm.import_ckpt(
         model=model,
         source="hf://meta-llama/Llama-3.1-8B",
-        overwrite=True,
     )
 except MisconfigurationException as e:
     print(e)
