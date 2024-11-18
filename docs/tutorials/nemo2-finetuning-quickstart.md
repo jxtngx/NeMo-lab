@@ -28,8 +28,8 @@ python scripts/quickstart/nemo2_quickstart.py
 ```
 
 > [!WARNING]
-> installing the requirements takes several minutes \n
-> DO NOT INTERRUPT THE PROCESS
+> installing the requirements takes several minutes <br>
+> DO NOT INTERRUPT THE PROCESS!
 
 > [!IMPORTANT]
 > attempting to run the quickstart in a notebook may affect the Lightning Trainer and NeMo training strategy
@@ -59,8 +59,8 @@ pip install -v \
 5. `git+https://github.com/NVIDIA/apex.git` is NVIDIA Apex and is needed for RoPE scaling and other methods
 
 > [!WARNING]
-> the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations \n
-> DO NOT INTERRUPT THE PROCESS
+> the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations <br>
+> DO NOT INTERRUPT THE PROCESS!
 
 > [!TIP]
 > run `bash install_requirements.sh` to run the above installation steps
