@@ -3,7 +3,7 @@
 The following table is a simple reference for minimum VRAM requirements of particular LMs during inference, and NVIDIA (data center) hardware that meet those requirements.
 
 > [!NOTE]
-> the table assumes 16-bit dtype. as such, models quantized to lower bit representations may be capable of using less powerful devices than what is listed.
+> the table assumes 16-bit (half) precision. as such, models quantized to lower bit representations may be capable of using less powerful devices than what is listed.
 
 > [!NOTE]
 > finetuning models will require different hardware, and is subject to data considerations
