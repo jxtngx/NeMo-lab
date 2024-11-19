@@ -1,4 +1,4 @@
-# NeMo 2.0 Finetuning Quickstart
+# NeMo 2.0 Llama 3 Finetuning Quickstart
 
 The steps shown below have been collected from the NeMo 2.0 documentation and tutorials, and help to familiarize with finetuning recipes made available in NeMo 2.0.
 
