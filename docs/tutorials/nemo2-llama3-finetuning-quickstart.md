@@ -24,7 +24,7 @@ If you wish to run the quickstart, and then read the accompanying commentary tha
 
 ```bash
 bash install_requirements.sh
-python scripts/quickstart/nemo2_quickstart.py
+python scripts/tutorials/nemo2_quickstart.py
 ```
 
 > [!WARNING]
