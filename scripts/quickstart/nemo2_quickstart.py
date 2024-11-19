@@ -7,20 +7,19 @@ from nemo.collections import llm
 import nemo_run as run
 
 # create a logger
-logger = logging.getLogger("my_logger")
-logger.setLevel(logging.DEBUG)
-handler = RichHandler(rich_tracebacks=True, markup=True)
-logger.addHandler(handler)
+FORMAT = "%(message)s"
+logging.basicConfig(level="NOTSET", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()])
+log = logging.getLogger("rich")
 
 # configure the model
-logger.info("[green][FineTune] Configuring the model[/]")
+log.info("[green][FineTune] Configuring the model[/]")
 config = llm.Llama31Config8B()
 model = llm.LlamaModel(
     config=config,
 )
 
 # load the model
-logger.info("[green][FineTune] Loading the model[/]")
+log.info("[green][FineTune] Loading the model[/]")
 try:
     llm.import_ckpt(
         model=model,
@@ -30,7 +29,7 @@ except MisconfigurationException as e:
     print(e)
 
 # create the recipe
-logger.info("[green][FineTune] Instantiating recipe[/]")
+log.info("[green][FineTune] Instantiating recipe[/]")
 recipe = llm.llama31_8b.finetune_recipe(
     name="llama31_8b_finetuning",
     dir="finetune-logs",
@@ -42,5 +41,5 @@ recipe = llm.llama31_8b.finetune_recipe(
 recipe.trainer.strategy = "auto"  # let PTL do the work
 
 # run the recipe
-logger.info("[green][FineTune] Running recipe[/]")
+log.info("[green][FineTune] Running recipe[/]")
 run.run(recipe, executor=run.LocalExecutor())
