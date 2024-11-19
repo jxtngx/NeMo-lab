@@ -9,6 +9,9 @@ NeMo Lab is an example template for Generative AI with language models using [NV
 - video models
 - speech models
 
+> [!IMPORTANT]
+> NeMo Lab is under active development
+
 # Concepts
 
 NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html), the [`TensorRT-LLM quick start`](https://nvidia.github.io/TensorRT-LLM/quick-start-guide.html), and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM); of which the later follows the below shown pipeline to guide hackathon participants through instruction tuning and deploying a Llama variant:
