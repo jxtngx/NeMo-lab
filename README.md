@@ -14,7 +14,7 @@ NeMo Lab is an example template for Generative AI with language models using [NV
 
 # Concepts
 
-NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html), the [`TensorRT-LLM quick start`](https://nvidia.github.io/TensorRT-LLM/quick-start-guide.html), and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM); of which the later follows the below shown pipeline to guide hackathon participants through instruction tuning and deploying a Llama variant:
+NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html) and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM); of which the later follows the below shown pipeline to guide hackathon participants through instruction tuning and deploying a Llama variant:
 
 ```mermaid
 flowchart LR
@@ -43,7 +43,7 @@ We will use NeMo to tune a Llama variant on the instruction tuning dataset.
 
 ## Model Deployment
 
-We will use NeMo interfaces to export models for inference with [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server).
+We will use NeMo interfaces to export models for inference with [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) and [Triton Inference Server](https://github.com/triton-inference-server/server), or [vLLM](https://github.com/vllm-project/vllm).
 
 > [!NOTE]
 > Refer to the [model deployment tutorial](./docs/tutorials/3-model-deployment.md) for a detailed walk-through
@@ -51,11 +51,12 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 ## Additional Concepts
 
 - Code profiling with [NVIDIA NSight](https://developer.nvidia.com/nsight-systems)
+- Logging training and tuning runs with [Weights & Biases](https://wandb.ai/site)
 - Model output control with [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
-- LLM Traces with [LangSmith](https://www.langchain.com/langsmith)
+- LLM traces with [Arize](https://arize.com/)
+- Agents as DAGs with [LangGraph](https://www.langchain.com/langgraph)
 - Containerization with Docker
 - System prompt design
-- Experiment management with [Weights & Biases](https://wandb.ai/site)
 
 # Models
 
@@ -77,7 +78,7 @@ We will use NVIDIA and Meta models including, but not limited to:
 - [NVIDIA NGC](https://catalog.ngc.nvidia.com/) for NeMo and TensorRT-LLM containers
 - [build.nvidia.com](https://build.nvidia.com/) for API calls to NVIDIA hosted endpoints
 - [Hugging Face Hub](https://huggingface.co/) for model weights and datasets
-- [LangChain](https://www.langchain.com/) for LangSmith
+- [Arize](https://arize.com/) for tracing and observability
 - [Weights & Biases](https://wandb.ai/site) for experiment management during finetuning
 
 ## Setup
@@ -110,6 +111,11 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [NeMo Guardrails documentation](https://docs.nvidia.com/nemo/guardrails/index.html)
 - [NVIDIA NIM (LLM) documentation](https://docs.nvidia.com/nim/large-language-models/latest/introduction.html)
 - [langchain-nvidia-ai-endpoints documentation](https://python.langchain.com/docs/integrations/providers/nvidia/)
+- [Arize documentation](https://docs.arize.com/arize)
+- [LangGraph documentation](https://langchain-ai.github.io/langgraph/tutorials/introduction/)
+- [W&B documentation](https://docs.wandb.ai/ref/python/)
+- [vLLM documentation](https://docs.vllm.ai/en/latest/)
+
 
 ## NVIDIA Deep Learning Institute
 
@@ -132,3 +138,4 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [Build a Large Language Model, Sebastian Raschka](https://www.manning.com/books/build-a-large-language-model-from-scratch)
 - [Hands-On Large Language Models, Alammar et al](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)
 - [Getting Beyond the Hype: A Guide to AI’s Potential, Stanford](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential)
+- [Arize and LangGraph](https://arize.com/blog/langgraph/)
