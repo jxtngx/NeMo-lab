@@ -67,10 +67,16 @@ We will use NVIDIA and Meta models including, but not limited to:
 - NVIDIA embedding, reranking, and retrieval models
 - NVIDIA Cosmos tokenizers
 
+> [!TIP]
+> See [models/](docs/conceptual-guides/models/) for more on model families and types
+
 # System Requirements
 
 - a CUDA compatible OS and device (GPU) with at least 16GB of VRAM (e.g. a T4 (Colab), or RTX 3090).
 - [Docker](https://docs.docker.com/)
+
+> [!TIP]
+> See [hardware/](docs/conceptual-guides/hardware/) for more regarding VRAM requirements of particular models
 
 # User Account Requirements
 
@@ -115,6 +121,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/tutorials/introduction/)
 - [W&B documentation](https://docs.wandb.ai/ref/python/)
 - [vLLM documentation](https://docs.vllm.ai/en/latest/)
+- [Milvus documentation](https://milvus.io/docs)
 
 
 ## NVIDIA Deep Learning Institute
@@ -139,3 +146,5 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [Hands-On Large Language Models, Alammar et al](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/)
 - [Getting Beyond the Hype: A Guide to AI’s Potential, Stanford](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential)
 - [Arize and LangGraph](https://arize.com/blog/langgraph/)
+- [Milvus and LangChain](https://milvus.io/docs/integrate_with_langchain.md)
+- [vLLM and LangChain](https://python.langchain.com/docs/integrations/llms/vllm/)
