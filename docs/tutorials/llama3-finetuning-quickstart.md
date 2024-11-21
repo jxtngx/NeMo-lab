@@ -24,7 +24,7 @@ If you wish to run the quickstart, and then read the accompanying commentary tha
 
 ```bash
 bash install_requirements.sh
-python scripts/tutorials/nemo2-llama3-finetuning-quickstart.py
+python scripts/tutorials/nemo/llama3-finetuning-quickstart.py
 ```
 
 > [!WARNING]

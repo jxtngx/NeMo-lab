@@ -25,7 +25,7 @@ id1(data processing) --> id2(model development) --> id3(model deployment)
 > When appropriate, we will use scripts and recipes provided in [NVIDIA/NeMo/scripts](https://github.com/NVIDIA/NeMo/tree/main/scripts)
 
 > [!TIP]
-> Get started with the quick start [tutorial](docs/tutorials/nemo2-llama3-finetuning-quickstart.md) and [script](scripts/tutorials/nemo2-llama3-finetuning-quickstart.py)
+> Get started with the quick start [tutorial](docs/tutorials/llama3-finetuning-quickstart.md) and [script](scripts/tutorials/nemo/llama3-finetuning-quickstart.py)
 
 ## Data Processing
 
@@ -99,7 +99,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 > please be aware that the build process may take several minutes
 
 > [!TIP]
-> Get started with the quick start [tutorial](docs/tutorials/nemo2-llama3-finetuning-quickstart.md) and [script](scripts/tutorials/nemo2-llama3-finetuning-quickstart.py)
+> Get started with the quick start [tutorial](docs/tutorials/llama3-finetuning-quickstart.md) and [script](scripts/tutorials/nemo/llama3-finetuning-quickstart.py)
 
 # Resources
 
