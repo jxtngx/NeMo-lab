@@ -92,7 +92,7 @@ We will use NVIDIA and Meta models including, but not limited to:
 To prepare a development environment, please run the following in terminal:
 
 ```sh
-bash install_requirments.sh
+bash install_requirements.sh
 ```
 
 Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.0rc0`, and the `nvidia/apex` PyTorch extension. 
