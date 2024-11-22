@@ -87,7 +87,7 @@ We will use NVIDIA and Meta models including, but not limited to:
 - [Arize](https://arize.com/) for tracing and observability
 - [Weights & Biases](https://wandb.ai/site) for experiment management during finetuning
 
-## Setup
+# Setup
 
 To prepare a development environment, please run the following in terminal:
 
