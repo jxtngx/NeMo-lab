@@ -1,6 +1,7 @@
 # apt-get update && apt-get install -y libsndfile1 ffmpeg
 pip install Cython packaging
 pip install nemo_toolkit['all']
+pip install transformer-engine['pytorch']
 pip install git+https://github.com/NVIDIA/NeMo-Run.git
 pip install git+https://github.com/NVIDIA/Megatron-LM.git
 # apex python
