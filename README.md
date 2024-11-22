@@ -121,8 +121,9 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/tutorials/introduction/)
 - [W&B documentation](https://docs.wandb.ai/ref/python/)
 - [vLLM documentation](https://docs.vllm.ai/en/latest/)
-- [Milvus documentation](https://milvus.io/docs)
-
+- [cuVS](https://docs.rapids.ai/api/cuvs/stable/) (GPU accelerated vector search by NVIDIA Rapids)
+- [Weaviate documentation](https://weaviate.io/developers/weaviate)
+- [Streamlit documentation](https://docs.streamlit.io/)
 
 ## NVIDIA Deep Learning Institute
 
@@ -154,7 +155,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [Hands-On Large Language Models](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) (Alammar et al)
 - [Getting Beyond the Hype: A Guide to AI’s Potential](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential) (Stanford)
 - [Arize and LangGraph](https://arize.com/blog/langgraph/) (Arize)
-- [Milvus and LangChain](https://milvus.io/docs/integrate_with_langchain.md) (Milvus)
+- [Weaviate and LangChain](https://python.langchain.com/docs/integrations/vectorstores/weaviate/) (Weavaite)
 - [vLLM and LangChain](https://python.langchain.com/docs/integrations/llms/vllm/) (LangChain)
 - [Agentic Design Patterns](https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/?ref=dl-staging-website.ghost.io) (Deep Learning AI)
 - [Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) (LangChain)
