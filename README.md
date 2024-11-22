@@ -155,7 +155,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [Hands-On Large Language Models](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) (Alammar et al)
 - [Getting Beyond the Hype: A Guide to AI’s Potential](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential) (Stanford)
 - [Arize and LangGraph](https://arize.com/blog/langgraph/) (Arize)
-- [Weaviate and LangChain](https://python.langchain.com/docs/integrations/vectorstores/weaviate/) (Weavaite)
+- [Weaviate and LangChain](https://python.langchain.com/docs/integrations/vectorstores/weaviate/) (LangChain)
 - [vLLM and LangChain](https://python.langchain.com/docs/integrations/llms/vllm/) (LangChain)
 - [Agentic Design Patterns](https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/?ref=dl-staging-website.ghost.io) (Deep Learning AI)
 - [Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) (LangChain)
