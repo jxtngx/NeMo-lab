@@ -123,7 +123,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 - [vLLM documentation](https://docs.vllm.ai/en/latest/)
 - [cuVS](https://docs.rapids.ai/api/cuvs/stable/) (GPU accelerated vector search by NVIDIA Rapids)
 - [Weaviate documentation](https://weaviate.io/developers/weaviate)
-- [Streamlit documentation](https://docs.streamlit.io/)
+- [Gradio documentation](https://www.gradio.app/docs)
 
 ## NVIDIA Deep Learning Institute
 
