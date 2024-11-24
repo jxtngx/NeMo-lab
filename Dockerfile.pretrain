@@ -4,7 +4,7 @@
 # pytorch base
 FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-runtime
 
-RUN apt-get update && apt-get -y install git git-lfs cmake libsndfile1 ffmpeg
+RUN apt-get update && apt-get -y install git git-lfs cmake libsndfile1 ffmpeg wget
 # nemo toolkit
 RUN pip install Cython packaging "nemo_toolkit[all]"
 # nvidia apex
@@ -20,3 +20,4 @@ RUN pip install git+https://github.com/NVIDIA/NeMo-Run.git@6b00501e68d56070bb4fb
 RUN pip install "flash-attn<2.5.7"
 # nvidia transformer-engine
 RUN pip install "transformer-engine[pytorch]==1.11.0"
+RUN wget "https://raw.githubusercontent.com/jxtngx/nemo-lab/refs/heads/main/scripts/tutorials/nemo/pretrain_nemotron3_4b.py"
