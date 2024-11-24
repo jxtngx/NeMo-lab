@@ -41,22 +41,27 @@ python scripts/tutorials/nemo/llama3-finetuning-quickstart.py
 The following installation commands are provided in [`install_requirements.sh`](../../install_requirements.sh), and can be ran from the terminal with `bash install_requirements.sh`. Each command is shown here so that we might state why each is included as a requirement.
 
 ```bash
-apt-get update && apt-get install -y libsndfile1 ffmpeg
-pip install "nemo_toolkit[all]"
-pip install git+https://github.com/NVIDIA/NeMo-Run.git
-pip install git+https://github.com/NVIDIA/Megatron-LM.git
-pip install -v \
-    --disable-pip-version-check \
-    --no-cache-dir --no-build-isolation --config-settings \
-    "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" \
-    git+https://github.com/NVIDIA/apex.git
+# torch
+pip install "torch==2.2.1" --index-url https://download.pytorch.org/whl/cu121
+# nvidia apex
+pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings \
+"--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" \
+git+https://github.com/NVIDIA/apex.git@24.04.01
+# megatron-core
+pip install "megatron-core==0.9.0"
+# nemo-run
+pip install git+https://github.com/NVIDIA/NeMo-Run.git@6b00501e68d56070bb4fb9808ab11bb8d0f03b51
+# flash-attn
+# see https://github.com/NVIDIA/TransformerEngine/issues/1236
+pip install "flash-attn<2.5.7"
+# nvidia transformer-engine
+pip install "transformer-engine[pytorch]==1.11.0"
 ```
 
-1. `libsndfile1` and `ffmpeg` are needed for audio and vision files
-2. `nemo_tool[all]` is the NeMo framework
-3. `git+https://github.com/NVIDIA/NeMo-Run.git` installs NeMo Run
-4. `git+https://github.com/NVIDIA/Megatron-LM.git` installs the nightly version of `megatron_core`
-5. `git+https://github.com/NVIDIA/apex.git` is NVIDIA Apex and is needed for RoPE scaling and other methods
+1. NVIDIA Apex extends PyTorch
+2. Megatron Core is required by NeMo for MegatronStrategies
+3. NeMo Run enables running NeMo recipes with convienent executors
+4. Flash Attention and TransformerEngine support efficient execution primitives
 
 > [!WARNING]
 > the NVIDIA Apex build may take several minutes to complete the CUDA and C++ extension installations <br>
