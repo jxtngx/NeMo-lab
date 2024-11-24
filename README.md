@@ -110,6 +110,19 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 
 # Resources
 
+## Quickstart Studios
+
+<table>
+    <tr>
+        <th>Quickstart</th>
+        <th>Studio</th>
+    </tr>
+    <tr>
+        <td>Pretrain Nemotron 3 4B</td>
+        <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/pretrain-nemotron-3-4b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
+    </tr>
+</table>
+
 ## Framework References
 
 - [NeMo documentation](https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html)
