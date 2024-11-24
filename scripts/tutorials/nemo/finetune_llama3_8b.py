@@ -35,7 +35,7 @@ def configure_checkpoint_conversion():
 
 def configure_finetuning_recipe(nodes: int = 1, gpus_per_node: int = 1):
     recipe = llm.llama3_8b.finetune_recipe(
-        dir="/checkpoints/llama3_finetuning",  # Path to store checkpoints
+        dir="./checkpoints/llama3_finetuning",  # Path to store checkpoints
         name="llama3_lora",
         num_nodes=nodes,
         num_gpus_per_node=gpus_per_node,
@@ -65,7 +65,7 @@ def run_finetuning():
     executor.env_vars["CUDA_VISIBLE_DEVICES"] = "0"
 
     # Set this env var for model download from huggingface
-    executor.env_vars["HF_TOKEN_PATH"] = "/tokens/huggingface"
+    executor.env_vars["HF_TOKEN_PATH"] = "./tokens/huggingface"
 
     with run.Experiment("llama3-8b-peft-finetuning") as exp:
         exp.add(
