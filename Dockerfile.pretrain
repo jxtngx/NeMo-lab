@@ -14,7 +14,7 @@ RUN pip install "nemo_toolkit[all]"
 # nvidia apex
 RUN pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings \
 "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" \
-git+https://github.com/NVIDIA/apex.git@24.04.01
+git+https://github.com/NVIDIA/apex.git
 # megatron-core
 RUN pip install "megatron-core==0.9.0"
 # nemo-run
