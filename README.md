@@ -25,7 +25,7 @@ id1(data processing) --> id2(model development) --> id3(model deployment)
 > When appropriate, we will use scripts and recipes provided in [NVIDIA/NeMo/scripts](https://github.com/NVIDIA/NeMo/tree/main/scripts)
 
 > [!TIP]
-> Get started with the quick start [quickstart tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
+> Get started with the quick start [tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
 
 ## Data Processing
 
@@ -106,7 +106,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 > please be aware that the build process may take several minutes
 
 > [!TIP]
-> Get started with the quick start [quickstart tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
+> Get started with the quick start [tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
 
 # Resources
 
