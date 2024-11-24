@@ -127,11 +127,14 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
     </tr>
 </table>
 
-## Framework References
+## NeMo References
 
 - [NeMo documentation](https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html)
 - [NeMo tutorials](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html)
 - [NeMo Guardrails documentation](https://docs.nvidia.com/nemo/guardrails/index.html)
+- [Deploy on a SLURM cluster](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemo-2.0/quickstart.html#execute-on-a-slurm-cluster)
+
+## Other References
 - [NVIDIA NIM (LLM) documentation](https://docs.nvidia.com/nim/large-language-models/latest/introduction.html)
 - [langchain-nvidia-ai-endpoints documentation](https://python.langchain.com/docs/integrations/providers/nvidia/)
 - [Arize documentation](https://docs.arize.com/arize)
