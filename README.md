@@ -29,14 +29,14 @@ id1(data processing) --> id2(model development) --> id3(model deployment)
 
 ## Data Processing
 
-We will use a dataset presecribed in the NeMo tutorials for instruction tuning. The dataset will be processed according to the procedure shown in any complementary script or tutorial that accompanies that dataset.
+We will use a dataset presecribed in the NeMo tutorials for fine-tuning. The dataset will be processed according to the procedure shown in any complementary script or recipe that accompanies that dataset.
 
 > [!NOTE]
 > Refer to the [data processing tutorial](./docs/tutorials/1-data-processing.md) for a detailed walk-through
 
 ## Model Development
 
-We will use NeMo to tune a Llama variant on the instruction tuning dataset.
+We will use NeMo to tune a Llama variant on the fine-tuning dataset.
 
 > [!NOTE]
 > Refer to the [model development tutorial](./docs/tutorials/2-model-development.md) for a detailed walk-through
