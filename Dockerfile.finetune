@@ -1,12 +1,16 @@
+# nemo base
 # see https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nemo
 # FROM nvcr.io/nvidia/nemo:24.07
 
 # pytorch base
-FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-runtime
+FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-devel
+
+LABEL maintainer="jxtngx"
 
 RUN apt-get update && apt-get -y install git git-lfs cmake libsndfile1 ffmpeg wget
 # nemo toolkit
-RUN pip install Cython packaging "nemo_toolkit[all]"
+RUN pip install Cython packaging 
+RUN pip install "nemo_toolkit[all]"
 # nvidia apex
 RUN pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings \
 "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" \
