@@ -36,11 +36,10 @@ classifiers = [
     "Programming Language :: Python :: 3.12"
 ]
 dependencies = [
-    "transformer_engine[pytorch]",
-    "huggingface_hub",
+    "huggingface_hub[cli]",
     "transformers",
     "datasets",
-    "click",
+    "typer",
     "python-dotenv",
     "omegaconf"
 ]
