@@ -25,7 +25,7 @@ id1(data processing) --> id2(model development) --> id3(model deployment)
 > When appropriate, we will use scripts and recipes provided in [NVIDIA/NeMo/scripts](https://github.com/NVIDIA/NeMo/tree/main/scripts)
 
 > [!TIP]
-> Get started with the quick start [tutorial](docs/tutorials/llama3-finetuning-quickstart.md) and [script](scripts/tutorials/nemo/llama3-finetuning-quickstart.py)
+> Get started with the quick start [quickstart tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
 
 ## Data Processing
 
@@ -72,7 +72,7 @@ We will use NVIDIA and Meta models including, but not limited to:
 
 # System Requirements
 
-- a CUDA compatible OS and device (GPU) with at least 16GB of VRAM (e.g. a T4 (Colab), or RTX 3090).
+- a CUDA compatible OS and device (GPU) with at least 48GB of VRAM (e.g. an L40S).
 - [Docker](https://docs.docker.com/)
 
 > [!TIP]
@@ -106,7 +106,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 > please be aware that the build process may take several minutes
 
 > [!TIP]
-> Get started with the quick start [tutorial](docs/tutorials/llama3-finetuning-quickstart.md) and [script](scripts/tutorials/nemo/llama3-finetuning-quickstart.py)
+> Get started with the quick start [quickstart tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
 
 # Resources
 
@@ -120,6 +120,10 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
     <tr>
         <td>Pretrain Nemotron 3 4B</td>
         <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/pretrain-nemotron-3-4b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
+    </tr>
+    <tr>
+        <td>Finetune Llama 3 8B</td>
+        <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/finetune-llama-3-8b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
     </tr>
 </table>
 
