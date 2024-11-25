@@ -57,6 +57,13 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 - Containerization with Docker
 - System prompt design
 
+# Source Code Concepts
+
+The source code found in `src/nemo_lab` is used to provide examples of implementing concepts "from-scratch" with NeMo. For instance – how might we add a custom model, or our own training recipe given base interfaces and mixins found within the framework.
+
+> [!NOTE]
+> The current focus for the source code is implementing support for Llama 3.2 variants
+
 # Models
 
 We will use NVIDIA and Meta models including, but not limited to:
