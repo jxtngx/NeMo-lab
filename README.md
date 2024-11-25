@@ -112,20 +112,23 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 
 # Resources
 
-## Quickstart Studios
+## Quickstart Studios and Images
 
 <table>
     <tr>
         <th>Quickstart</th>
         <th>Studio</th>
+        <th>Docker</th>
     </tr>
     <tr>
         <td>Pretrain Nemotron 3 4B</td>
         <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/pretrain-nemotron-3-4b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
+        <td><a target="_blank" href="https://hub.docker.com/r/jxtngx/nemo-pretrain-nemotron3-4b"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
     </tr>
     <tr>
         <td>Finetune Llama 3 8B</td>
         <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/finetune-llama-3-8b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
+        <td><a target="_blank" href="https://hub.docker.com/r/jxtngx/nemo-finetune-llama3-8b"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
     </tr>
 </table>
 
