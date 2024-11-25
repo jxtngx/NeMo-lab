@@ -24,7 +24,7 @@ flowchart LR
 id1(data processing) --> id2(model development) --> id3(model deployment)
 ```
 
-NeMo Lab currently focuses on tutorials for language models; and will expand into NeMo audio, vision, and multimodal capabilities when appropriate. 
+NeMo Lab currently focuses on language models, and will expand into NeMo audio, vision, and multimodal capabilities when appropriate. 
 
 ## Data Processing
 
@@ -170,6 +170,9 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [NeMo tutorials](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html)
 - [NeMo Guardrails documentation](https://docs.nvidia.com/nemo/guardrails/index.html)
 - [Deploy on a SLURM cluster](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemo-2.0/quickstart.html#execute-on-a-slurm-cluster)
+- [Mixed Precision Training](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/features/mixed_precision.html)
+- [CPU Offloading](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/features/optimizations/cpu_offloading.html)
+- [Communication Overlap](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/features/optimizations/communication_overlap.html)
 
 ## Dependency References
 - [NVIDIA NIM (LLM) documentation](https://docs.nvidia.com/nim/large-language-models/latest/introduction.html)
@@ -213,6 +216,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [Post-Training Quantization of LLMs with NVIDIA NeMo and NVIDIA TensorRT Model Optimizer](https://developer.nvidia.com/blog/post-training-quantization-of-llms-with-nvidia-nemo-and-nvidia-tensorrt-model-optimizer/)
 - [Getting Started with Large Language Models for Enterprise Solutions](https://developer.nvidia.com/blog/getting-started-with-large-language-models-for-enterprise-solutions/)
 - [Unlocking the Power of Enterprise-Ready LLMs with NVIDIA NeMo](https://developer.nvidia.com/blog/unlocking-the-power-of-enterprise-ready-llms-with-nemo/)
+- [TensorRT-LLM KV Cache Early Reuse](https://developer.nvidia.com/blog/5x-faster-time-to-first-token-with-nvidia-tensorrt-llm-kv-cache-early-reuse/)
 
 
 ## Academic Papers
