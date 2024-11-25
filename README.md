@@ -91,6 +91,11 @@ We will use NVIDIA and Meta models including, but not limited to:
 
 # Setup
 
+> [!TIP]
+> Get started with the quick start [tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
+
+## On Host (local)
+
 To prepare a development environment, please run the following in terminal:
 
 ```sh
@@ -107,8 +112,29 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 > NVIDIA Apex is built with CUDA and C++ extensions for performance and full functionality.
 > please be aware that the build process may take several minutes
 
-> [!TIP]
-> Get started with the quick start [tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
+## Docker
+
+Two Docker images have been created for the quick start tutorials. One for pretraining, and one for finetuning.
+
+To run pretraining, do the following in terminal:
+
+```sh
+docker pull jxtngx/nemo-pretrain-nemotron3-4b
+docker run --rm --gpus 1 -it jxtngx/nemo-pretrain-nemotron3-4b
+python pretrain_nemotron3_4b.py
+```
+
+To run finetuning, do the following in terminal:
+
+```sh
+docker pull docker pull jxtngx/nemo-finetune-llama3-8b
+docker run --rm --gpus 1 -it docker jxtngx/nemo-finetune-llama3-8b
+python finetune_llama3_8b.py
+```
+
+## Hosted Compute Environments
+
+See [Quickstart Studios and Images](##Quickstart-Studios-and-Images)
 
 # Resources
 
