@@ -15,7 +15,7 @@ NeMo Lab is an example template for Generative AI with [NVIDIA NeMo 2.0](https:/
 > [!TIP]
 > Get started with the quick start [tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
 
-# Concepts
+# Tutorial Concepts
 
 NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html) and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM); of which the later follows the below shown pipeline to guide hackathon participants through instruction tuning and deploying a Llama variant:
 
@@ -24,16 +24,18 @@ flowchart LR
 id1(data processing) --> id2(model development) --> id3(model deployment)
 ```
 
+NeMo Lab currently focuses on tutorials for language models; and will expand into NeMo audio, vision, and multimodal capabilities when appropriate. 
+
 ## Data Processing
 
-We will use a dataset presecribed in the NeMo tutorials for fine-tuning. The dataset will be processed according to the procedure shown in any complementary script or recipe that accompanies that dataset.
+Data processing is task dependent, relative to pretraining or finetuning. When pretraining, we will use Hugging Face's [cosmopedia](https://huggingface.co/datasets/HuggingFaceTB/cosmopedia) dataset. When finetuning, we will use NeMo's default dataset – `SquadDataModule` – a variant of the [Stanford QA dataset](https://huggingface.co/datasets/nvidia/ChatQA-Training-Data/viewer/squad2.0). 
 
 > [!NOTE]
 > Refer to the [data processing tutorial](./docs/tutorials/1-data-processing.md) for a detailed walk-through
 
 ## Model Development
 
-We will use NeMo to tune a Llama variant on the fine-tuning dataset.
+We will use NeMo to train Nemotron 3 4B on the cosmopedia dataset, and tune a Llama variant on the SQuAD dataset.
 
 > [!NOTE]
 > Refer to the [model development tutorial](./docs/tutorials/2-model-development.md) for a detailed walk-through
@@ -47,7 +49,7 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 
 ## Additional Concepts
 
-- Code profiling with [NVIDIA NSight](https://developer.nvidia.com/nsight-systems)
+- Code profiling
 - Logging training and tuning runs with [Weights & Biases](https://wandb.ai/site)
 - Model output control with [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
 - LLM traces with [Arize](https://arize.com/)
@@ -60,9 +62,9 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 We will use NVIDIA and Meta models including, but not limited to:
 
 - NVIDIA Llama variants, Mistral variants, Megatron distillations, and Minitron
-- NeMo compatible Meta Llama variants
 - NVIDIA embedding, reranking, and retrieval models
 - NVIDIA Cosmos tokenizers
+- NeMo compatible Meta Llama variants
 
 > [!TIP]
 > See [models/](docs/conceptual-guides/models/) for more on model families and types
@@ -91,7 +93,7 @@ We will use NVIDIA and Meta models including, but not limited to:
 > [!TIP]
 > Get started with the quick start [tutorials](docs/tutorials/quickstarts) and [scripts](scripts/tutorials/nemo)
 
-## On Host (local)
+## On Host (local, no container)
 
 To prepare a development environment, please run the following in terminal:
 
@@ -126,8 +128,15 @@ To run finetuning, do the following in terminal:
 ```sh
 docker pull docker pull jxtngx/nemo-finetune-llama3-8b
 docker run --rm --gpus 1 -it docker jxtngx/nemo-finetune-llama3-8b
+huggingface-cli login
+{ENTER HF KEY WHEN PROMPTED}
 python finetune_llama3_8b.py
 ```
+
+> [!IMPORTANT]
+> Finetuning requires a Hugging Face key and access to Llama 3 8B <br>
+> For keys, see: https://huggingface.co/docs/hub/en/security-tokens <br>
+> For Llama 3 8B access, see: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 
 ## Hosted Compute Environments
 
@@ -162,7 +171,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [NeMo Guardrails documentation](https://docs.nvidia.com/nemo/guardrails/index.html)
 - [Deploy on a SLURM cluster](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemo-2.0/quickstart.html#execute-on-a-slurm-cluster)
 
-## Other References
+## Dependency References
 - [NVIDIA NIM (LLM) documentation](https://docs.nvidia.com/nim/large-language-models/latest/introduction.html)
 - [langchain-nvidia-ai-endpoints documentation](https://python.langchain.com/docs/integrations/providers/nvidia/)
 - [Arize documentation](https://docs.arize.com/arize)
@@ -172,6 +181,12 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [cuVS](https://docs.rapids.ai/api/cuvs/stable/) (GPU accelerated vector search by NVIDIA Rapids)
 - [Weaviate documentation](https://weaviate.io/developers/weaviate)
 - [Gradio documentation](https://www.gradio.app/docs)
+
+## Interoperability Guides
+
+- [Arize and LangGraph](https://arize.com/blog/langgraph/) (Arize)
+- [Weaviate and LangChain](https://python.langchain.com/docs/integrations/vectorstores/weaviate/) (LangChain)
+- [vLLM and LangChain](https://python.langchain.com/docs/integrations/llms/vllm/) (LangChain)
 
 ## NVIDIA Deep Learning Institute
 
@@ -199,13 +214,32 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [Getting Started with Large Language Models for Enterprise Solutions](https://developer.nvidia.com/blog/getting-started-with-large-language-models-for-enterprise-solutions/)
 - [Unlocking the Power of Enterprise-Ready LLMs with NVIDIA NeMo](https://developer.nvidia.com/blog/unlocking-the-power-of-enterprise-ready-llms-with-nemo/)
 
+
+## Academic Papers
+
+- [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+- [Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism](https://arxiv.org/abs/1909.08053)
+- [LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971)
+- [Compact Language Models via Pruning and Knowledge Distillation](https://arxiv.org/abs/2407.14679v1)
+- [8-bit Optimizers via Block-wise Quantization](https://arxiv.org/abs/2110.02861)
+- [FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning](https://arxiv.org/abs/2307.08691)
+- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
+- [Efficient Tool Use with Chain-of-Abstraction Reasoning](https://arxiv.org/abs/2401.17464)
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
+
 ## Additional Materials
 
 - [Build a Large Language Model](https://www.manning.com/books/build-a-large-language-model-from-scratch) (Sebastian Raschka)
 - [Hands-On Large Language Models](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) (Alammar et al)
-- [Getting Beyond the Hype: A Guide to AI’s Potential](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential) (Stanford)
-- [Arize and LangGraph](https://arize.com/blog/langgraph/) (Arize)
-- [Weaviate and LangChain](https://python.langchain.com/docs/integrations/vectorstores/weaviate/) (LangChain)
-- [vLLM and LangChain](https://python.langchain.com/docs/integrations/llms/vllm/) (LangChain)
+- [StatQuest](https://www.youtube.com/@statquest) (Josh Starmer)
+- [Coding a ChatGPT Like Transformer From Scratch in PyTorch](https://youtu.be/C9QSpl5nmrY?si=K1vbKeIhbZuhWDu9) (Josh Starmer)
+- [Serrano Academy](https://www.youtube.com/@SerranoAcademy) (Luis Serrano)
+- [Intro to Large Language Models](https://youtu.be/zjkBMFhNj_g?si=0P7JK2_WB6EV6iBg) (Andrej Karpathy)
+- [Building LLMs from the Ground Up](https://youtu.be/quh7z1q7-uc?si=XHoADXdtTc-izVKg) (Sebastian Raschka)
+- [Coding the Self-Attention Mechanism of LLMs](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) (Sebastian Raschka)
+- [Neural networks](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=rIh_wk3JmY1x9MIf) (Grant Sanderson)
+- [Visualizing Transformers and Attention](https://youtu.be/KJtZARuO3JY?si=yjhZ7An6uigCVeqE) (Grant Sanderson)
 - [Agentic Design Patterns](https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/?ref=dl-staging-website.ghost.io) (Deep Learning AI)
 - [Intro to LangGraph](https://academy.langchain.com/courses/intro-to-langgraph) (LangChain)
+- [Getting Beyond the Hype: A Guide to AI’s Potential](https://online.stanford.edu/getting-beyond-hype-guide-ais-potential) (Stanford)
