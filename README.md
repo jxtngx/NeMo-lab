@@ -131,7 +131,7 @@ python finetune_llama3_8b.py
 
 ## Hosted Compute Environments
 
-See [Quickstart Studios and Images](##Quickstart-Studios-and-Images)
+See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 
 # Resources
 
