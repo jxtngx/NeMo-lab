@@ -73,7 +73,9 @@ We will use NVIDIA and Meta models including, but not limited to:
 # System Requirements
 
 - a CUDA compatible OS and device (GPU) with at least 48GB of VRAM (e.g. an L40S).
-- [Docker](https://docs.docker.com/)
+- CUDA 12.1
+- Python 3.10.10
+- Pytorch 2.2.1
 
 > [!TIP]
 > See [hardware/](docs/conceptual-guides/hardware/) for more regarding VRAM requirements of particular models
