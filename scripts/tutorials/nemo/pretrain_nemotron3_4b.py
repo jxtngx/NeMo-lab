@@ -25,10 +25,13 @@ def configure_recipe(
         num_gpus_per_node=gpus_per_node,
         max_steps=max_steps,  # Setting a small value for the quickstart
     )
+    # dataset, dataloader
+    data = configure_dataset()
+    recipe.data = data
     # see https://pytorch-lightning.readthedocs.io/en/2.4.0/pytorch/common/trainer.html#
     recipe.trainer.val_check_interval = val_check_interval
-    # recipe.trainer.strategy = "auto"  # try to override megatron strategy
     recipe.model.config.num_layers = 8
+
     return recipe
 
 
