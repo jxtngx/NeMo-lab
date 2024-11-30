@@ -229,6 +229,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 
 ## Academic Papers
 
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
 - [Neural GPUs Learn Algorithms](https://arxiv.org/abs/1511.08228)
 - [A Structured Self-attentive Sentence Embedding](https://arxiv.org/pdf/1703.03130)
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
