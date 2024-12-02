@@ -133,8 +133,8 @@ python pretrain_nemotron3_4b.py
 To run finetuning, do the following in terminal:
 
 ```sh
-docker pull docker pull jxtngx/nemo-finetune-llama3-8b
-docker run --rm --gpus 1 -it docker jxtngx/nemo-finetune-llama3-8b
+docker pull jxtngx/nemo-finetune-llama3-8b
+docker run --rm --gpus 1 -it jxtngx/nemo-finetune-llama3-8b
 huggingface-cli login
 {ENTER HF KEY WHEN PROMPTED}
 python finetune_llama3_8b.py
@@ -246,6 +246,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)
 - [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
 - [Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/pdf/2309.06180)
+- [Efficiently Scaling Transformer Inference](https://arxiv.org/pdf/2211.05102)
 - [LayerSkip: Enabling Early Exit Inference and Self-Speculative Decoding](https://arxiv.org/pdf/2404.16710)
 - [Efficient Tool Use with Chain-of-Abstraction Reasoning](https://arxiv.org/abs/2401.17464)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
