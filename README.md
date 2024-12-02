@@ -255,6 +255,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 
 - [Artificial Intelligence: A Modern Approach](https://www.google.com/books/edition/Artificial_Intelligence/koFptAEACAAJ?hl=en) (Russell, Norvig)
 - [Build a Large Language Model](https://www.manning.com/books/build-a-large-language-model-from-scratch) (Sebastian Raschka)
+- [Hands-On Generative AI with Transformers and Diffusion Models](https://www.oreilly.com/library/view/hands-on-generative-ai/9781098149239/) (Sanseverio et al)
 - [Hands-On Large Language Models](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) (Alammar et al)
 - [StatQuest](https://www.youtube.com/@statquest) (Josh Starmer)
 - [Coding a ChatGPT Like Transformer From Scratch in PyTorch](https://youtu.be/C9QSpl5nmrY?si=K1vbKeIhbZuhWDu9) (Josh Starmer)
