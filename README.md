@@ -253,6 +253,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 
 ## Additional Materials
 
+- [Artificial Intelligence: A Modern Approach](https://www.google.com/books/edition/Artificial_Intelligence/koFptAEACAAJ?hl=en) (Russell, Norvig)
 - [Build a Large Language Model](https://www.manning.com/books/build-a-large-language-model-from-scratch) (Sebastian Raschka)
 - [Hands-On Large Language Models](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) (Alammar et al)
 - [StatQuest](https://www.youtube.com/@statquest) (Josh Starmer)
