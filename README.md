@@ -210,6 +210,7 @@ python finetune_llama3_8b.py
 
 ## NVIDIA Technical Blog
 
+- [What is Generative AI](https://www.nvidia.com/en-us/glossary/generative-ai/)
 - [Prompt Engineering and P-Tuning](https://developer.nvidia.com/blog/an-introduction-to-large-language-models-prompt-engineering-and-p-tuning/)
 - [Scaling LLMs with NVIDIA Triton and NVIDIA TensorRT-LLM](https://developer.nvidia.com/blog/scaling-llms-with-nvidia-triton-and-nvidia-tensorrt-llm-using-kubernetes/)
 - [Turbocharging Meta Llama 3 Performance with NVIDIA TensorRT-LLM and NVIDIA Triton Inference Server](https://developer.nvidia.com/blog/turbocharging-meta-llama-3-performance-with-nvidia-tensorrt-llm-and-nvidia-triton-inference-server/)
@@ -249,6 +250,11 @@ python finetune_llama3_8b.py
 ## Additional Materials
 
 - [Artificial Intelligence: A Modern Approach](https://www.google.com/books/edition/Artificial_Intelligence/koFptAEACAAJ?hl=en) (Russell, Norvig)
+- [Deep Learning](https://www.deeplearningbook.org/) (Bengio et al)
+- [Reinforcement Learning](https://www.google.com/books/edition/Reinforcement_Learning_second_edition/uWV0DwAAQBAJ?hl=en&gbpv=0) (Sutton, Barto)
+- [Mathematics for Machine Learning](https://mml-book.github.io/) (Deisenroth et al)
+- [Programming Massively Parallel Processors](https://www.google.com/books/edition/Programming_Massively_Parallel_Processor/uXrSzgEACAAJ?hl=en) (Hwu et al)
+- [Deep Learning with PyTorch](https://www.manning.com/books/deep-learning-with-pytorch) (Stevens, Antiga, Viehmann)
 - [Build a Large Language Model](https://www.manning.com/books/build-a-large-language-model-from-scratch) (Sebastian Raschka)
 - [Hands-On Generative AI with Transformers and Diffusion Models](https://www.oreilly.com/library/view/hands-on-generative-ai/9781098149239/) (Sanseverio et al)
 - [Hands-On Large Language Models](https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/) (Alammar et al)
