@@ -145,28 +145,21 @@ python finetune_llama3_8b.py
 > For keys, see: https://huggingface.co/docs/hub/en/security-tokens <br>
 > For Llama 3 8B access, see: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 
-## Hosted Compute Environments
-
-See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
-
 # Resources
 
-## Quickstart Studios and Images
+## Quickstart Docker Images
 
 <table>
     <tr>
         <th>Quickstart</th>
-        <th>Studio</th>
-        <th>Docker</th>
+        <th>Image</th>
     </tr>
     <tr>
         <td>Pretrain Nemotron 3 4B</td>
-        <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/pretrain-nemotron-3-4b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
         <td><a target="_blank" href="https://hub.docker.com/r/jxtngx/nemo-pretrain-nemotron3-4b"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
     </tr>
     <tr>
         <td>Finetune Llama 3 8B</td>
-        <td><a target="_blank" href="https://lightning.ai/jxtngx/studios/finetune-llama-3-8b-with-nvidia-nemo"><img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/></a></td>
         <td><a target="_blank" href="https://hub.docker.com/r/jxtngx/nemo-finetune-llama3-8b"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
     </tr>
 </table>
@@ -251,6 +244,7 @@ See [Quickstart Studios and Images](#Quickstart-Studios-and-Images)
 - [Efficient Tool Use with Chain-of-Abstraction Reasoning](https://arxiv.org/abs/2401.17464)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
 - [Adaptive Mixtures of Local Experts](https://www.cs.toronto.edu/~fritz/absps/jjnh91.pdf)
+- [Convergence of artificial intelligence and high performance computing on NSF-supported cyberinfrastructure](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-020-00361-2)
 
 ## Additional Materials
 
