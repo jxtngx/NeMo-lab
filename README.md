@@ -265,6 +265,7 @@ python finetune_llama3_8b.py
 - [Coding a ChatGPT Like Transformer From Scratch in PyTorch](https://youtu.be/C9QSpl5nmrY?si=K1vbKeIhbZuhWDu9) (Josh Starmer)
 - [Serrano Academy](https://www.youtube.com/@SerranoAcademy) (Luis Serrano)
 - [Intro to Large Language Models](https://youtu.be/zjkBMFhNj_g?si=0P7JK2_WB6EV6iBg) (Andrej Karpathy)
+- [CS25: V2 I Introduction to Transformers](https://youtu.be/XfpMkf4rD6E?si=_dh7yUntYIeest07) (Stanford, Karpathy)
 - [Building LLMs from the Ground Up](https://youtu.be/quh7z1q7-uc?si=XHoADXdtTc-izVKg) (Sebastian Raschka)
 - [Coding the Self-Attention Mechanism of LLMs](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html) (Sebastian Raschka)
 - [Neural networks](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=rIh_wk3JmY1x9MIf) (Grant Sanderson)
