@@ -224,9 +224,11 @@ python finetune_llama3_8b.py
 
 ## Academic Papers
 
-- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
+- [A Neural Probabilistic Language Model](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
+- [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215)
 - [Neural GPUs Learn Algorithms](https://arxiv.org/abs/1511.08228)
 - [A Structured Self-attentive Sentence Embedding](https://arxiv.org/pdf/1703.03130)
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
 - [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
 - [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
