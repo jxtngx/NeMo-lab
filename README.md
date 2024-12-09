@@ -237,6 +237,7 @@ python finetune_llama3_8b.py
 - [LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971)
 - [The Llama 3 Herd of Models](https://arxiv.org/pdf/2407.21783)
 - [Compact Language Models via Pruning and Knowledge Distillation](https://arxiv.org/abs/2407.14679v1)
+- [LLM Pruning and Distillation in Practice: The Minitron Approach](https://arxiv.org/pdf/2408.11796)
 - [8-bit Optimizers via Block-wise Quantization](https://arxiv.org/abs/2110.02861)
 - [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135)
 - [FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning](https://arxiv.org/abs/2307.08691)
