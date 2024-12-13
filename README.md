@@ -17,14 +17,7 @@ NeMo Lab is an example template for Generative AI with [NVIDIA NeMo 2.0](https:/
 
 # Tutorial Concepts
 
-NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html) and [`openhackathons-org/End-to-End-LLM`](https://github.com/openhackathons-org/End-to-End-LLM); of which the later follows the below shown pipeline to guide hackathon participants through instruction tuning and deploying a Llama variant:
-
-```mermaid
-flowchart LR
-id1(data processing) --> id2(model development) --> id3(model deployment)
-```
-
-NeMo Lab currently focuses on language models, and will expand into NeMo audio, vision, and multimodal capabilities when appropriate. 
+NeMo Lab is inspired by [`NeMo tutorials`](https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/starthere/tutorials.html) and focuses on using NeMo to train, tune, and serve language models. 
 
 ## Data Processing
 
