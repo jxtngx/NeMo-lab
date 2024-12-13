@@ -230,6 +230,7 @@ python finetune_llama3_8b.py
 - [A Structured Self-attentive Sentence Embedding](https://arxiv.org/pdf/1703.03130)
 - [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
 - [Attention is All You Need](https://arxiv.org/abs/1706.03762)
+- [Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer](https://arxiv.org/abs/1701.06538)
 - [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
 - [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
 - [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
