@@ -45,8 +45,8 @@ We will use NeMo interfaces to export models for inference with [TensorRT-LLM](h
 - Code profiling
 - Logging training and tuning runs with [Weights & Biases](https://wandb.ai/site)
 - Model output control with [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
-- LLM traces with [Arize](https://arize.com/)
 - Agents as DAGs with [LangGraph](https://www.langchain.com/langgraph)
+- Agent traces with [LangSmith](https://www.langchain.com/langsmith)
 - Containerization with Docker
 - System prompt design
 
@@ -85,7 +85,7 @@ We will use NVIDIA and Meta models including, but not limited to:
 - [NVIDIA NGC](https://catalog.ngc.nvidia.com/) for NeMo and TensorRT-LLM containers
 - [build.nvidia.com](https://build.nvidia.com/) for API calls to NVIDIA hosted endpoints
 - [Hugging Face Hub](https://huggingface.co/) for model weights and datasets
-- [Arize](https://arize.com/) for tracing and observability
+- [LangSmith](https://www.langchain.com/) for tracing
 - [Weights & Biases](https://wandb.ai/site) for experiment management during finetuning
 
 # Setup
@@ -170,18 +170,15 @@ python finetune_llama3_8b.py
 ## Dependency References
 - [NVIDIA NIM (LLM) documentation](https://docs.nvidia.com/nim/large-language-models/latest/introduction.html)
 - [langchain-nvidia-ai-endpoints documentation](https://python.langchain.com/docs/integrations/providers/nvidia/)
-- [Arize documentation](https://docs.arize.com/arize)
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/tutorials/introduction/)
 - [DSPy](https://dspy.ai/)
 - [W&B documentation](https://docs.wandb.ai/ref/python/)
 - [vLLM documentation](https://docs.vllm.ai/en/latest/)
 - [cuVS](https://docs.rapids.ai/api/cuvs/stable/) (GPU accelerated vector search by NVIDIA Rapids)
 - [Weaviate documentation](https://weaviate.io/developers/weaviate)
-- [Gradio documentation](https://www.gradio.app/docs)
 
 ## Interoperability Guides
 
-- [Arize and LangGraph](https://arize.com/blog/langgraph/) (Arize)
 - [Weaviate and LangChain](https://python.langchain.com/docs/integrations/vectorstores/weaviate/) (LangChain)
 - [vLLM and LangChain](https://python.langchain.com/docs/integrations/llms/vllm/) (LangChain)
 
