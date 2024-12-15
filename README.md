@@ -128,8 +128,9 @@ To run finetuning, do the following in terminal:
 ```sh
 docker pull jxtngx/nemo-finetune-llama3-8b
 docker run --rm --gpus 1 -it jxtngx/nemo-finetune-llama3-8b
+# WAIT FOR CONTAINER TO START 
 huggingface-cli login
-{ENTER HF KEY WHEN PROMPTED}
+# ENTER HF KEY WHEN PROMPTED
 python finetune_llama3_8b.py
 ```
 
