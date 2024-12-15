@@ -215,6 +215,7 @@ python finetune_llama3_8b.py
 ## Academic Papers
 
 - [A Neural Probabilistic Language Model](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
+- [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661)
 - [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215)
 - [Neural GPUs Learn Algorithms](https://arxiv.org/abs/1511.08228)
 - [A Structured Self-attentive Sentence Embedding](https://arxiv.org/pdf/1703.03130)
