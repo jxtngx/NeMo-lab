@@ -156,12 +156,13 @@ python finetune_llama3_8b.py
         <td>Pretrain Nemotron 3 4B</td>
         <td><a target="_blank" href="https://hub.docker.com/layers/jxtngx/nemo-lab/pretrain/images/sha256-478e2ab93eff94d68696490f376d0c16b57237857e6f93fe43211cc732f2663a"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
         <td>–</td>
+        <!-- <td><a target="_blank" href=""><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td> -->
     </tr>
     <tr>
         <td>Finetune Llama 3 8B</td>
         <td><a target="_blank" href="https://hub.docker.com/layers/jxtngx/nemo-lab/finetune/images/sha256-85b8c1f16dfe739139fcb51f1055a71498c1f9340257516ffa231e1fe6413a15"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
         <td>–</td>
-        <!-- <td><a target="_blank" href="https://console.brev.dev/launchable/deploy?launchableID=env-2pJXYhO2kpaQxrMBlHKqBHGMrxq"><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td> -->
+        <!-- <td><a target="_blank" href=""><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td> -->
     </tr>
 </table>
 
