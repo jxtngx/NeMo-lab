@@ -126,7 +126,7 @@ python pretrain_nemotron3_4b.py
 To run finetuning, do the following in terminal:
 
 ```sh
-docker pull jxtngx/nemo-lab:pretrain
+docker pull jxtngx/nemo-lab:finetune
 docker run --rm --gpus 1 -it jxtngx/nemo-finetune-llama3-8b
 # WAIT FOR CONTAINER TO START 
 huggingface-cli login
