@@ -1,6 +1,4 @@
-# nemo base
-# see https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nemo
-# FROM nvcr.io/nvidia/nemo:24.07
+FROM python:3.11.11-slim-bullseye
 
 # pytorch base
 FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-devel
