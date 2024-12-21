@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y install git git-lfs cmake libsndfile1 ffmpeg wg
 RUN pip install -U "huggingface_hub[cli]"
 # nemo toolkit
 RUN pip install Cython packaging
-RUN pip install "nemo_toolkit[all]==2.0.0"
+RUN pip install "nemo_toolkit[all]"
 # megatron-core
 RUN pip install "megatron-core==0.9.0"
 # nemo-run
@@ -22,4 +22,4 @@ git+https://github.com/NVIDIA/apex.git@24.04.01
 # make sure networkx is pinned to a known compatible version
 RUN pip install "networkx==3.4.2"
 # get quickstart script
-RUN wget "https://raw.githubusercontent.com/jxtngx/nemo-lab/refs/heads/main/scripts/tutorials/nemo/pretrain_nemotron3_4b.py"
+ADD "https://raw.githubusercontent.com/jxtngx/nemo-lab/refs/heads/main/scripts/tutorials/nemo/pretrain_nemotron3_4b.py" /pretrain_nemotron3_4b.py
