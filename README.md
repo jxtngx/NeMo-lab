@@ -114,7 +114,7 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 ## Docker
 
 > [!IMPORTANT]
-> running the images requires for the host device to have access to NVIDIA GPUs
+> running the images requires for the host machine to have access to NVIDIA GPUs
 
 Two Docker images have been created for the quick start tutorials. One for pretraining, and one for finetuning.
 
