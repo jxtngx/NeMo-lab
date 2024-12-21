@@ -119,7 +119,7 @@ To run pretraining, do the following in terminal:
 
 ```sh
 docker pull jxtngx/nemo-lab:pretrain
-docker run --rm --gpus 1 -it jxtngx/nemo-pretrain-nemotron3-4b
+docker run --rm --gpus 1 -it jxtngx/nemo-lab:pretrain
 python pretrain_nemotron3_4b.py
 ```
 
@@ -127,7 +127,7 @@ To run finetuning, do the following in terminal:
 
 ```sh
 docker pull jxtngx/nemo-lab:finetune
-docker run --rm --gpus 1 -it jxtngx/nemo-finetune-llama3-8b
+docker run --rm --gpus 1 -it jxtngx/nemo-lab:finetune
 # WAIT FOR CONTAINER TO START 
 huggingface-cli login
 # ENTER HF KEY WHEN PROMPTED
