@@ -118,7 +118,7 @@ Two Docker images have been created for the quick start tutorials. One for pretr
 To run pretraining, do the following in terminal:
 
 ```sh
-docker pull jxtngx/nemo-pretrain-nemotron3-4b
+docker pull jxtngx/nemo-lab:pretrain
 docker run --rm --gpus 1 -it jxtngx/nemo-pretrain-nemotron3-4b
 python pretrain_nemotron3_4b.py
 ```
@@ -126,7 +126,7 @@ python pretrain_nemotron3_4b.py
 To run finetuning, do the following in terminal:
 
 ```sh
-docker pull jxtngx/nemo-finetune-llama3-8b
+docker pull jxtngx/nemo-lab:pretrain
 docker run --rm --gpus 1 -it jxtngx/nemo-finetune-llama3-8b
 # WAIT FOR CONTAINER TO START 
 huggingface-cli login
@@ -146,15 +146,19 @@ python finetune_llama3_8b.py
 <table>
     <tr>
         <th>Quickstart</th>
-        <th>Image</th>
+        <th>Docker Image</th>
+        <th>NVIDIA Launchable</th>
     </tr>
     <tr>
         <td>Pretrain Nemotron 3 4B</td>
-        <td><a target="_blank" href="https://hub.docker.com/r/jxtngx/nemo-pretrain-nemotron3-4b"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
+        <td><a target="_blank" href="https://hub.docker.com/layers/jxtngx/nemo-lab/pretrain/images/sha256-478e2ab93eff94d68696490f376d0c16b57237857e6f93fe43211cc732f2663a"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
+        <td>–</td>
     </tr>
     <tr>
         <td>Finetune Llama 3 8B</td>
-        <td><a target="_blank" href="https://hub.docker.com/r/jxtngx/nemo-finetune-llama3-8b"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
+        <td><a target="_blank" href="https://hub.docker.com/layers/jxtngx/nemo-lab/finetune/images/sha256-85b8c1f16dfe739139fcb51f1055a71498c1f9340257516ffa231e1fe6413a15"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
+        <td>–</td>
+        <!-- <td><a target="_blank" href="https://console.brev.dev/launchable/deploy?launchableID=env-2pJXYhO2kpaQxrMBlHKqBHGMrxq"><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td> -->
     </tr>
 </table>
 
