@@ -154,13 +154,13 @@ python finetune_llama3_8b.py
     </tr>
     <tr>
         <td>Pretrain Nemotron 3 4B</td>
-        <td><a target="_blank" href="https://hub.docker.com/layers/jxtngx/nemo-lab/pretrain/images/sha256-478e2ab93eff94d68696490f376d0c16b57237857e6f93fe43211cc732f2663a"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
+        <td><a target="_blank" href="https://hub.docker.com/repository/docker/jxtngx/nemo-lab/tags/train/sha256-e056f7988b875676e01a0ba2ae8fa4623ae28f0295a012f809e98158f413c2a2"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
         <td>–</td>
         <!-- <td><a target="_blank" href=""><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td> -->
     </tr>
     <tr>
         <td>Finetune Llama 3 8B</td>
-        <td><a target="_blank" href="https://hub.docker.com/layers/jxtngx/nemo-lab/finetune/images/sha256-85b8c1f16dfe739139fcb51f1055a71498c1f9340257516ffa231e1fe6413a15"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
+        <td><a target="_blank" href="https://hub.docker.com/repository/docker/jxtngx/nemo-lab/tags/tune/sha256-29c27b9c41d633f48ed92aec40e33438b84fb3751e764df4655c9b2e697650d7"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff"/></a></td>
         <td>–</td>
         <!-- <td><a target="_blank" href=""><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td> -->
     </tr>
