@@ -1,13 +1,11 @@
 FROM pytorch/pytorch:2.2.1-cuda12.1-cudnn8-devel
 
-LABEL maintainer="jxtngx"
-
 RUN apt-get update && apt-get -y install git git-lfs cmake libsndfile1 ffmpeg wget
 # hugging face hub
 RUN pip install -U "huggingface_hub[cli]"
 # nemo toolkit
 RUN pip install Cython packaging
-RUN pip install "nemo_toolkit[all]"
+RUN pip install "nemo_toolkit[all]==2.0.0"
 # megatron-core
 RUN pip install "megatron-core==0.9.0"
 # nemo-run
@@ -21,5 +19,7 @@ RUN pip install "transformer-engine[pytorch]==1.11.0"
 RUN pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings \
 "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" \
 git+https://github.com/NVIDIA/apex.git@24.04.01
+# make sure networkx is pinned to a known compatible version
+RUN pip install "networkx==3.4.2"
 # get quickstart script
 RUN wget "https://raw.githubusercontent.com/jxtngx/nemo-lab/refs/heads/main/scripts/tutorials/nemo/pretrain_nemotron3_4b.py"
