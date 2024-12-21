@@ -113,6 +113,9 @@ Doing so will install `nemo_lab` along with the `nemo_run`, `megatron_core 0.10.
 
 ## Docker
 
+> [!IMPORTANT]
+> running the images requires for the host device to have access to NVIDIA GPUs
+
 Two Docker images have been created for the quick start tutorials. One for pretraining, and one for finetuning.
 
 To run pretraining, do the following in terminal:
@@ -141,7 +144,7 @@ python finetune_llama3_8b.py
 
 # Resources
 
-## Quickstart Docker Images
+## Quickstart Images and Containers
 
 <table>
     <tr>
