@@ -22,4 +22,4 @@ git+https://github.com/NVIDIA/apex.git@24.04.01
 # make sure networkx is pinned to a known compatible version
 RUN pip install "networkx==3.4.2"
 # get quickstart script
-ADD "https://raw.githubusercontent.com/jxtngx/nemo-lab/refs/heads/main/scripts/tutorials/nemo/finetune_llama3_8b.py" /finetune_llama3_8b.py
+ADD "https://raw.githubusercontent.com/jxtngx/nemo-lab/refs/heads/main/scripts/tutorials/nemo/finetune_llama3_8b.py" /workspace/finetune_llama3_8b.py
