@@ -138,8 +138,8 @@ python finetune_llama3_8b.py
 ```
 
 > [!IMPORTANT]
-> Finetuning requires a Hugging Face key and access to Llama 3 8B <br>
-> For keys, see: https://huggingface.co/docs/hub/en/security-tokens <br>
+> Finetuning requires a Hugging Face key and access to Llama 3 8B <br/>
+> For keys, see: https://huggingface.co/docs/hub/en/security-tokens <br/>
 > For Llama 3 8B access, see: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 
 # Resources
@@ -163,6 +163,10 @@ python finetune_llama3_8b.py
         <td><a target="_blank" href="https://console.brev.dev/launchable/deploy?launchableID=env-2qcfslJNcRDEkHNGfhpW625D2SN"><img src="https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white"/></a></td>
     </tr>
 </table>
+
+> [!IMPORTANT]
+> to run the script in the NVIDIA Launchable, use the following command in terminal: <br/>
+> `python /workspace/finetune_llama3_8b.py` or `python /workspace/pretrain_nemotron3_4b.py`
 
 ## NeMo References
 
